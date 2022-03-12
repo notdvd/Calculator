@@ -1,0 +1,83 @@
+@font-face{
+    font-family:'digital';
+    src: url('digital-7.ttf');
+   }
+
+* {
+    margin: 0%;
+}
+
+.title {
+    display: block;
+    margin: 10px auto 10px;
+    padding: auto 10px auto 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 48px;
+    font-family: "JetBrains Mono",monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    align-items: center;
+}
+
+.calculator {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 60%;
+    background-color: lightgrey;
+}
+
+.screen {
+    height: 20vh;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'digital';
+    font-size: 20vh;
+    background-color: black;
+    color: greenyellow;
+    margin: 5px;
+}
+
+.buttons {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    justify-content: center;
+    margin: 5px;
+    background-color: darkgrey;
+}
+
+.tall {
+    /* grid-row: span 3; */
+    grid-area: 2 / 4 / 6 / 5;
+}
+
+button {
+    /* min-width: 10%; */
+    min-height: 10vh;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "JetBrains Mono",monospace;
+    font-size: 5vh;
+}
+
+button:hover {
+    background-color: black;
+    color: greenyellow;
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
